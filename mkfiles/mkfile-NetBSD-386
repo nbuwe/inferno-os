@@ -8,10 +8,10 @@ OS=		o
 AR=		ar
 ARFLAGS=	ruvs
 
-AS=		cc -c
+AS=		cc -m32 -c
 ASFLAGS=
 
-CC=		cc -c
+CC=		cc -m32 -c
 CFLAGS=		-g\
 		-O\
 		-fcommon\
@@ -22,7 +22,7 @@ CFLAGS=		-g\
 		-I/usr/X11R7/include
 
 ANSICPP=
-LD=		cc
+LD=		cc -m32
 LDFLAGS=
 
 SYSLIBS=
