@@ -1032,3 +1032,9 @@ poolaudit(char*(*audit)(int, Bhdr *))
 	}
 	return r;
 }
+
+#ifdef __NetBSD__
+void _malloc_prefork(void) {}
+void _malloc_postfork(void) {}
+void _malloc_postfork_child(void) {}
+#endif
