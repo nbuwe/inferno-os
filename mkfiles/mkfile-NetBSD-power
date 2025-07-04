@@ -1,6 +1,7 @@
 TARGMODEL=	Posix
 TARGSHTYPE=	sh
 CPUS=		power
+HOST32=		powerpc
 
 O=		o
 OS=		o

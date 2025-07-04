@@ -1,6 +1,7 @@
 TARGMODEL=	Posix
 TARGSHTYPE=	sh
 CPUS=		386
+HOST32=		i386
 
 O=		o
 OS=		o

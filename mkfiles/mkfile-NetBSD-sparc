@@ -1,6 +1,7 @@
 TARGMODEL=	Posix
 TARGSHTYPE=	sh
 CPUS=		sparc
+HOST32=		sparc
 
 O=		o
 OS=		o
