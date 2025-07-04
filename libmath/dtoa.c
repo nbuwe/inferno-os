@@ -671,6 +671,15 @@ match(const char **sp, char *t)
 	return 1;
 }
 
+#ifdef __NetBSD__
+double
+_strtod_l(const char *s00, char **se, locale_t locale)
+{
+	USED(locale);	
+	return strtod(s00, se);
+}
+#endif
+
 double
 strtod(const char *s00, char **se)
 {
