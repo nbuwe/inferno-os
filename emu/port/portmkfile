@@ -60,12 +60,12 @@ sh-lib%.a:VQ:
 
 %-rc %-nt:V:
 		for(i in $CONFLIST)
-			mk 'CONF='$i $MKFLAGS $stem
+			mk $MKFLAGS 'CONF='$i $stem
 
 %-sh:V:
 		for i in $CONFLIST
 		do
-			mk 'CONF='$i $MKFLAGS $stem
+			mk $MKFLAGS 'CONF='$i $stem
 		done
 
 clean:V:	cleanconf-$SHELLTYPE
