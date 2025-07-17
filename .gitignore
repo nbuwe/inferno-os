@@ -3,6 +3,7 @@
 *.obj
 [8qkv965o].out
 [8qkv965o].emu
+[8qkv965o].emu-*
 obj.out
 obj.map
 vc*.pdb
@@ -44,6 +45,7 @@ y.debug
 # emu build artifacts
 /emu/*/*.root.[ch]
 /emu/*/emu.c
+/emu/*/emu-*.c
 /emu/*/errstr.h
 /emu/*/srv.h
 /emu/*/srvm.h
